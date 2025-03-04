@@ -23,7 +23,7 @@ This is a simple WebSocket implementation in Golang, consisting of a client and 
 
 ### Clone the Repository
 ```bash
-git clone https://github.com/yourusername/websocket-golang.git
+git clone https://github.com/Krygz/websocket-golang.git
 cd websocket-golang
 ```
 
