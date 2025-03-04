@@ -63,7 +63,6 @@ Server: Hello Server! , at 2024-03-04 12:30:00 +0000 UTC
 ```
 
 ---
----
 
 ## How It Works
 ### Server:
