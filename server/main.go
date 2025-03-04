@@ -23,6 +23,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 	}
 	defer conn.Close()
 
+	//loop to read the messages that the clients send and write them on the server
 	for {
 		messageType, message, err := conn.ReadMessage()
 		if err != nil {
@@ -44,7 +45,7 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/ws", Handler)
 
-	fmt.Println("Starting server on :3000")
+	fmt.Println("Starting server on: 3000")
 
 	if err := http.ListenAndServe(":3000", nil); err != nil {
 		fmt.Println(err)
