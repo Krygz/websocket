@@ -31,9 +31,9 @@ func Handler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		fmt.Printf("Received Message: %s", message)
+		fmt.Printf("Received Message: %s\n", message)
 
-		res := fmt.Sprintf("%s , at %s", string(message), time.Now().String())
+		res := fmt.Sprintf("%s , at %s\n", string(message), time.Now().String())
 
 		if err := conn.WriteMessage(messageType, []byte(res)); err != nil {
 			fmt.Println(err)
